@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Built-By: tend
+buildtime: 20180201-1521
+version: 1.0-SNAPSHOT
+Created-By: IntelliJ IDEA
+Build-Jdk: 1.8.0_40
+
