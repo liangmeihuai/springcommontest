@@ -18,7 +18,14 @@ public class MvcMethodLogAdvice {
     System.out.println("aroundAdvice args is = " + gson.toJson(args));
     MethodSignature signature = (MethodSignature) joinPoint.getSignature();
     Method method = signature.getMethod();
-    Object result = joinPoint.proceed();
+
+    Object result = null;
+    try{
+      result = joinPoint.proceed();
+    }catch (Throwable throwable){
+      System.out.println("throwable is " + throwable.getCause() + "====" + throwable.getMessage());
+    }
+
     System.out.println("aroundAdvice result is = " + gson.toJson(result));
     return result;
   }
