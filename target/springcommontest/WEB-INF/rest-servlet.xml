@@ -14,21 +14,23 @@
     <context:component-scan base-package="org.meihuai.springmvc.test" />
 
     <mvc:interceptors>
-        <mvc:interceptor>
+ <!--       <mvc:interceptor>
             <mvc:mapping path="/**"/>
             <bean class="org.meihuai.springmvc.test.filter.HandlerInterceptor1"/>
         </mvc:interceptor>
 
         <mvc:interceptor>
             <mvc:mapping path="/**"/>
- <!--           <mvc:exclude-mapping path=""></mvc:exclude-mapping>-->
+ &lt;!&ndash;           <mvc:exclude-mapping path=""></mvc:exclude-mapping>&ndash;&gt;
             <bean class="org.meihuai.springmvc.test.filter.HandlerInterceptor2"/>
-        </mvc:interceptor>
+        </mvc:interceptor>-->
 
         <mvc:interceptor>
             <mvc:mapping path="/**"/>
-            <!--           <mvc:exclude-mapping path=""></mvc:exclude-mapping>-->
-            <bean class="org.meihuai.springmvc.test.filter.HandlerInterceptor3"/>
+                       <mvc:exclude-mapping path="/"></mvc:exclude-mapping>
+                       <mvc:exclude-mapping path="/index.jsp"></mvc:exclude-mapping>
+           <!-- <bean class="org.meihuai.springmvc.test.filter.HandlerInterceptor3"/>-->
+          <ref bean="handlerInterceptor1"></ref>
         </mvc:interceptor>
     </mvc:interceptors>
 

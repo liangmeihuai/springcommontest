@@ -1,10 +1,9 @@
 package org.meihuai.springmvc.test.controller;
 
-import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.meihuai.springmvc.test.aspect.MvcMethodLogAdvice;
+import org.meihuai.springmvc.test.bean.Person;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,12 +13,29 @@ import java.util.Map;
  */
 @RestController
 public class CommonSourceController {
+    @Autowired
+    private MvcMethodLogAdvice mvcMethodLogAdvice;
     @RequestMapping(value = "/test/first", method = {RequestMethod.GET, RequestMethod.POST})
-    @ResponseBody
     public Map<String,String> testFirst(){
         Map<String,String> map = new HashMap<String, String>();
         map.put("code", "200");
         map.put("desc", "success");
+        return map;
+    }
+    @RequestMapping(value = "/test/exception", method = {RequestMethod.GET, RequestMethod.POST})
+    public Map<String,String> testException(){
+        Map<String,String> map = new HashMap<String, String>();
+        map.put("code", "200");
+        map.put("desc", "success");
+        int i = 1 / 0;
+        return map;
+    }
+
+    @RequestMapping(value = "/test/bean", method = {RequestMethod.POST})
+    public Map<String,String> testBean(@RequestBody Person person){
+        Map<String,String> map = new HashMap<String, String>();
+        map.put("code", "200");
+        map.put("desc", person.getName());
         return map;
     }
 

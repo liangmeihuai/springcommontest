@@ -63,12 +63,36 @@
       <scope>provided</scope>
     </dependency>
 
+    <!--aspect start-->
+    <!-- aspectjrt -->
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjrt</artifactId>
+      <version>1.6.11</version>
+    </dependency>
+    <!-- aspectjweaver -->
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjweaver</artifactId>
+      <version>1.6.11</version>
+    </dependency>
+    <!--aspect end-->
+
+
+
+
     <!--spring end-->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.6</version>
     </dependency>
   </dependencies>
 
@@ -85,7 +109,7 @@
               <port>8080</port>
             </httpConnector>
             <webApp>
-              <contextPath>/bucket</contextPath>
+                <contextPath>/bucket</contextPath>
             </webApp>
           </configuration>
         </plugin>
