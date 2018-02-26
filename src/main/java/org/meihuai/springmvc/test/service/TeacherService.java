@@ -7,4 +7,5 @@ import org.meihuai.springmvc.test.bean.Teacher;
  */
 public interface TeacherService {
     Teacher selectByPrimaryKey(Integer id);
+    int insertSelective(Teacher record) throws Exception;
 }
