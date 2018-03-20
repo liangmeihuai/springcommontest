@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="589effbc-3518-480a-9df7-46b0c29466ef" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/meihuai/springmvc/test/redis/redis是乐观锁事务.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/meihuai/springmvc/test/redis/redis的事务分析与改进" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/meihuai/test/RedisTransactionTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/meihuai/test/RedisTransactionTest.java" />
     </list>
     <ignored path="springsorcecommontest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,7 +52,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RedisTransactionTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RedisTransactionTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/org/meihuai/test/RedisTransactionTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="675">
@@ -60,6 +61,23 @@
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="redis的事务分析与改进" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/meihuai/springmvc/test/redis/redis的事务分析与改进">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3256">
+              <caret line="122" column="2" selection-start-line="122" selection-start-column="2" selection-end-line="122" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="redis是乐观锁事务.png" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/meihuai/springmvc/test/redis/redis是乐观锁事务.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -136,6 +154,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/spring-redis.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/meihuai/springmvc/test/redis/RedisUtils.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/meihuai/test/RedisTransactionTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/meihuai/springmvc/test/redis/redis的事务分析与改进" />
       </list>
     </option>
   </component>
@@ -364,6 +383,7 @@
       <recent name="org.meihuai.springmvc.test.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\meihuai\talkingdata\读syz_bitmap\springsorcecommontest\src\main\java\org\meihuai\springmvc\test\redis" />
       <recent name="D:\meihuai\talkingdata\读syz_bitmap\springsorcecommontest\src\main\resources" />
       <recent name="D:\meihuai\talkingdata\读syz_bitmap\springsorcecommontest\src\main\java\org\meihuai\springmvc\test\mapper" />
       <recent name="D:\meihuai\talkingdata\读syz_bitmap\springsorcecommontest\src\main\java\org\meihuai\springmvc\test\bean" />
@@ -1155,7 +1175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521537066921</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="spring集成redis的简单例子-&gt;RedisUtils整合进来-redis的简单事务&#10;">
+      <created>1521537794955</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1521537794955</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1281,7 +1308,8 @@
     <MESSAGE value="mysql isolation test" />
     <MESSAGE value="spring集成redis的简单例子&#10;" />
     <MESSAGE value="spring集成redis的简单例子-&gt;RedisUtils整合进来&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring集成redis的简单例子-&gt;RedisUtils整合进来&#10;" />
+    <MESSAGE value="spring集成redis的简单例子-&gt;RedisUtils整合进来-redis的简单事务&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring集成redis的简单例子-&gt;RedisUtils整合进来-redis的简单事务&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1322,20 +1350,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/meihuai/springmvc/test/aspect/MvcMethodLogAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/meihuai/springmvc/test/bean/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/meihuai/springmvc/test/bean/page/Page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1705,6 +1719,19 @@
             <element signature="imports" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/meihuai/springmvc/test/redis/redis的事务分析与改进">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3256">
+          <caret line="122" column="2" selection-start-line="122" selection-start-column="2" selection-end-line="122" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/meihuai/springmvc/test/redis/redis是乐观锁事务.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>
