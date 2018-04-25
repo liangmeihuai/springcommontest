@@ -1,13 +1,15 @@
 package org.meihuai.springmvc.test.controller;
 
-import org.meihuai.springmvc.test.aspect.MvcMethodLogAdvice;
 import org.meihuai.springmvc.test.bean.Person;
 import org.meihuai.springmvc.test.bean.Teacher;
 import org.meihuai.springmvc.test.service.TeacherService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -19,8 +21,8 @@ import java.util.Map;
 public class CommonSourceController {
     @Autowired
     private TeacherService teacherService;
-    @Autowired
-    private MvcMethodLogAdvice mvcMethodLogAdvice;
+//    @Autowired
+//    private MvcMethodLogAdvice mvcMethodLogAdvice;
     private Logger logger = LoggerFactory.getLogger(CommonSourceController.class);
     @RequestMapping(value = "/test/first", method = {RequestMethod.GET, RequestMethod.POST})
     public Map<String,String> testFirst(){
